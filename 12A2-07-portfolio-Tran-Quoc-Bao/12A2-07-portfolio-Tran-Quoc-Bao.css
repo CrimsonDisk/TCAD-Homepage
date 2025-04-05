@@ -1,0 +1,172 @@
+#audioPlayer {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+body {
+    background-image: url('resources/autumn-road.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: #1cafe0;
+    font-family: Arial, sans-serif;
+}
+
+#content-wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    color: #a916ed;
+    font-size: 3rem;
+}
+
+h2 {
+    color: #62f5d5;
+    font-size: 2.5rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+th, td, p, a {
+    color: #70deff;
+    font-size: 1.6rem;
+}
+
+table {
+    margin: 10px auto;
+    border-collapse: collapse;
+    width: 80%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+    padding: 10px;
+    border: 3px solid rgb(47, 255, 175);
+}
+
+th {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+button {
+    background: #ff4500;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button:hover {
+    background: #4747ff;
+    color: rgb(255, 247, 0);
+    cursor: url('resources/pointer.cur'), auto;
+}
+
+button:hover a {
+    color: #00FF00;
+    cursor: url('resources/pointer.cur'), auto;
+}
+
+.video-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+iframe {
+    display: block;
+    margin: 20px auto;
+    width: 90%;
+    height: 600px;
+    border-radius: 5px;
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(25px);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+h1, h2, p {
+    animation: slideInUp 1s ease-out;
+}
+
+* {
+    cursor: url('resources/pointer.cur'), auto;
+}
+
+/* From Uiverse.io by Ali-Tahmazi99 */ 
+/* From uiverse.io by @Ali-Tahmazi99 */
+button {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+   }
+   
+   button::before,
+   button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transform: skew(15deg);
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: -1;
+   }
+   
+   button::before {
+    left: -10px;
+    background: #240046;
+   }
+   
+   button::after {
+    right: -10px;
+    background: #5a189a;
+   }
+   
+   button:hover::before,
+   button:hover::after {
+    width: 58%;
+   }
+   
+   button:hover span {
+    color: #e0aaff;
+    transition: 0.3s;
+   }
+   
+   button span {
+    color: #03045e;
+    font-size: 18px;
+    transition: all 0.3s ease-in;
+   }

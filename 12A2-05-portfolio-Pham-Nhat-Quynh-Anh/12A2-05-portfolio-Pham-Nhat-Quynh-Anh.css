@@ -1,0 +1,109 @@
+/* Link Styles */
+a {
+    color: rgb(8, 85, 199);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:visited {
+    color: darkmagenta;
+}
+
+a:hover {
+    color: rgb(87, 0, 0);
+    font-size: 120%;
+    font-weight: 700;
+}
+
+a:active {
+    color: lightcoral;
+    text-decoration: underline;
+}
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+/* Form Styles */
+.form-container {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(0, 0, 0);
+    width: 50%;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #e2bfbf;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(192, 127, 127, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.2rem;
+    color: #1C1B1F;
+}
+
+/* Input & Textarea */
+input[type="text"],
+textarea {
+    width: 90%;
+    padding: 12px;
+    margin: 0.3rem auto 1.5rem auto;
+    border: 1px solid #79747E;
+    border-radius: 55px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #e98780;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    color: #000000;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: lightcoral;
+    color: #866161;
+}
+
+/* Table Styles (Reverted Border) */
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid #eba2a2;
+    border-radius: 15px;
+}
+
+th {
+    background-color: #9e2c2c;
+    height: 1.5rem;
+    min-width: 80px;
+}
+
+/* Background (Reverted to Original) */
+body {
+    background-image: url('https://krisp.ai/blog/wp-content/uploads/2024/07/background10.webp');
+    background-image: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    cursor: url('pointer.png'), auto;
+}
+
+a, button, input, textarea {
+    cursor: url('pointer.png'), pointer;
+}
