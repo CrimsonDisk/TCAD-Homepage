@@ -17,6 +17,7 @@ body {
     background-size: cover;
 }
 
+/*Swiper*/
 .slider-wrapper {
     overflow: hidden;
     max-width: 600px;
@@ -53,16 +54,6 @@ body {
     margin: 14px 0 40px;
 }
 
-a {
-    color: black;
-    transition: 0.2s ease-out;
-    text-decoration: none;
-}
-
-a:hover {
-    color:wheat;
-}
-
 .card-list .card-item .portfolio {
     font-size: 1.25rem;
     font-weight: 500;
@@ -90,6 +81,17 @@ a:hover {
 .slider-wrapper .swiper-slide-button {
     color: rgb(0, 0, 0, 0.7);
     margin-top: -50px;
+}
+
+/*Buttons*/
+a {
+    color: black;
+    transition: 0.2s ease-out;
+    text-decoration: none;
+}
+
+a:hover {
+    color:wheat;
 }
 
 .github-button {
